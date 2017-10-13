@@ -3,11 +3,11 @@ import unittest
 from div import divid
 class testdivision(unittest.TestCase):
   def test_dividing(self):
-    self.assertEqual(divid(6,2),3)
+    self.assertEqual(divid(10,2),5)
     self.assertEqual(divid(-6,3),-2)
   def test_divide_by_zero(self):
     try:
-      divid(8,0)
+      divid(12,0)
     except ZeroDivisionError:
       self.fail("can't divide by zero")
   def test_edgecase(self):
